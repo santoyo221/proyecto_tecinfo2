@@ -1,0 +1,40 @@
+/* Estilo para el cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6f2ff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Contenedor de la galería */
+.galeria-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Estilo individual de cada imagen */
+.imagen img {
+    width: 250px;
+    height: auto;
+    border: 5px solid #003366; /* Marco azul oscuro */
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+/* Efecto al pasar el cursor */
+.imagen img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 51, 102, 0.6);
+}
